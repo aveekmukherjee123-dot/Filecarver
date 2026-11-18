@@ -1,0 +1,5 @@
+head -c 1M /dev/urandom > disk.img
+cat ~/Pictures/*.jpg >> disk.img      # or any jpg/png you have
+head -c 1M /dev/urandom >> disk.img
+./filecarver disk.img recovered
+cat recovered/recovery_report.txt
